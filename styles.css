@@ -1,2 +1,16 @@
 /* Your CSS goes here */
+/*Change the background color of all of the form input boxes and 
+submit button to be yellow 
+*/
 
+input {
+    background-color: yellow;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+p {
+    border: 1px dotted gray;
+}

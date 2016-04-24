@@ -3,15 +3,27 @@
 <html>
 <head>
     <title>Skills-HTML-CSS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- your html goes here -->
+    <h2>Job Application</h2>
+    <p>Ready to join the Ubermelon team? Fill out your details below
+        and get ready to start your melon adventure!</p>
 
-    <form>
-        First Name: <input type="text" name="firstname">
-        Last Name: <input type="text" name="lastname">
-        Salary Requirement: <input type="number" name="salary">
+    <form action="/application" method="POST">
+        <label for="firstname">
+            First Name: </label><input id="firstname" type="text" ><br>
+        <label id="bold">Last Name: <input type="text" name="lastname"></label><br>
+        <label>Salary Requirement: <input type="number" name="salary"></label><br>
+        <label>Job Title: 
+        <select name="title">
+            <option value="software">Software Engineer</option>
+            <option value="qa">QA Engineer</option>
+            <option value="product">Product Manager</option>
+        </select></label><br>
+        <input type="submit">
     </form>
 
 </body>
